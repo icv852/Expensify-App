@@ -7,7 +7,9 @@
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server"
+    "dev-server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "keywords": [],
   "author": "Victor Cheng",
@@ -20,6 +22,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "css-loader": "^4.2.0",
+    "express": "^4.17.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.9.0",
